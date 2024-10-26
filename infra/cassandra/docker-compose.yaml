@@ -5,7 +5,7 @@ services:
   cassandra:
     image: docker.io/bitnami/cassandra:5.0
     ports:
-      - '7000:7000'    # Порт для межузловой связи
+#      - '7000:7000'    # Порт для межузловой связи
       - '9042:9042'    # Порт для клиентских подключений
     volumes:
       - 'cassandra_data:/bitnami'

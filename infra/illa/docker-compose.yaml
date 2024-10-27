@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  illa-builder:
+    container_name: illa-builder
+    restart: always
+    image: "illasoft/illa-builder:latest"
+    ports:
+      - "8088:2022"
+    volumes:
+      - ./data/illa_database:/opt/illa/database:rw
+      - ./data/illa_drive:/opt/illa/drive:rw
